@@ -29,7 +29,7 @@ def mynavbar():
             'Menu',
             View('Home', 'home'),
             View('Profile', 'profile'),
-            View(f'Logout ({g.user.username})', 'logout')
+            View(f'Logout {g.user.username}', 'logout')
         )
     else:
         return Navbar(
